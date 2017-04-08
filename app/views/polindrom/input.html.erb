@@ -1,0 +1,17 @@
+<div class='header'>Square Palindrome</div>
+<p>&#128712; Данное приложение позволяет определить числа в диапазоне
+от 0 до n (n вводится пользователем), которые, сами являясь палиндромами, при
+возведении в квадрат, образуют палиндромы.</p>
+
+<center> Например:
+<img src="https://chart.googleapis.com/chart?cht=tx&amp;chl=22^2\Rightarrow 484" >
+</center><br>
+
+
+<%= form_tag('/output', method: :get, name: :input) do %>
+	<%= label_tag('Введите верхнюю границу поиска палиндрома n:') %>
+  <%= text_field_tag(:n) %><br>
+  <%= submit_tag('HTML', onclick: "input.action = '/output.html'") %>
+  <%= submit_tag('XML', onclick: "input.action = '/output.xml'") %>
+<% end %>
+

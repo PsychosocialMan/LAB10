@@ -1,0 +1,22 @@
+<div class='header'>Количество чисел, удовлетворяющих условию: <%= @num %></div>
+<center>
+  <% if (@num != 0) %>
+  	<table border='1'>
+	  	<caption>Ответ</caption>
+		  <tr>
+			  <th>Палиндром</th>
+			  <th>Квадрат палиндрома</th>
+		  </tr>
+      <% @result_array.each do |elem| %>
+      <tr>
+        <td><%= elem %></td>
+        <td><%= elem**2 %></td>
+      </tr>
+      <% end %>
+	  </table>
+  <% else %>
+    <div id='error'> Неверные входные данные! </div>
+  <% end %>
+</center>
+
+<%= link_to('Повторить', '/') %>

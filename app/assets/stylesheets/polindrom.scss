@@ -1,0 +1,35 @@
+// Place all the styles related to the polindrom controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.header{
+    font-size: xx-large;
+		text-align: center;
+		background-color: cornsilk;
+		border: 2px inset khaki;
+		padding: 5px;
+}
+th, td, caption{
+		padding: 5px;
+}
+
+
+a{
+		cursor:pointer;
+}
+form{
+		text-align: center;
+		background-color: palegoldenrod;
+		margin-left: 250px;
+		margin-right: 250px;
+		padding: 5px;
+}
+p, caption{
+		font-family: courier, monospace;
+		font-size: large;
+		padding-top: 10px;
+}
+#error{
+    padding: 10px;
+    font-size: x-large;
+}
+		
